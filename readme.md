@@ -1,14 +1,14 @@
-# Target identification of TCM’s compounds via cross-domain multi-modal transfer learning
+# Cross-domain multi-modal transfer learning for target identification of TCM's compounds
 
 ## 1. Introduction
 
-This repository contains source code and datasets for "[Target identification of TCM’s compounds via cross-domain multi-modal transfer learning]()".
+This repository contains source code and datasets for "**Cross-domain multi-modal transfer learning for target identification of TCM's compounds**".
 
-In this study, we proposed a cross-domain multimodal transfer learning method to identify chemical compounds as drug targets (called CMTarget) for efficient and accurate prediction of drug-protein interactions.
+In traditional Chinese medicine (TCM), limited and low-quality CPI data hinder deep learning models from effectively learning compound–target representations. To address this, we propose CMTarget, a cross-domain multi-modal transfer learning framework that leverages abundant Western medicine CPIs (7,331 from DrugBank) to improve TCM CPI prediction (901 from HIT2.0). CMTarget integrates sequence, structure, and knowledge graph information for robust representations and employs an interaction transfer module (InterNet) to transfer knowledge across domains.
 
 ## 2. Overview
 
-![image1](./fig/image1.png)
+![image1](./fig/image1.jpg)
 Fig1. Overview of drug repositioning framework.
 
 ## 3. Install Python libraries needed
@@ -61,18 +61,18 @@ python main.py --task predict -s drugbank -t hit -m CMTarget -mp [model path]
 ## 5. Citation and Contact
 
 ```
-@article{dong2024presrecst,
-  title={Target identification of TCM’s compounds via cross-domain multi-modal transfer learning},
-  author={},
-  journal={},
-  volume={},
-  number={},
-  pages={},
-  year={},
-  publisher={}
+@article{huan2025cmtarget,
+  title={Cross-domain multi-modal transfer learning for target identification of TCM's compounds},
+  author={Huan, Gu and Xunpeng, Xiao and Yuling, Wang and Chongyu, Wang and Kuo, Yang},
+  journal={IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2025},
+  volume={31},
+  number={6},
+  pages={1268--1271},
+  year={2025},
+  publisher={IEEE}
 }
 ```
 
 <b>If you have better suggestions or questions about our work, please contact us: <a>*kuoyang@bjtu.edu.cn*</a>. </b> 
 
-<b>Welcome to follow our project on GitHub: <a>https://github.com/Tangerti/CMTarget#</a>. </b>
+<b>Welcome to follow our project on GitHub: <a>https://github.com/2020MEAI/CMTarget</a>. </b>
